@@ -1,27 +1,55 @@
 /* CSS files add styling rules to your content */
 
 body {
-  color: #1D438A;
+  color: #2d47ba;
   background-color: F3D6FF;
-  font-family: monospace;
+  font-family: 'Space Grotesk', sans-serif;
   margin: 2em;
   width: 100%;
   height: 100%;
 }
 
 h1 {
-  color: #1D438A;
+  color: #2d47ba;
   background-color: F3D6FF;
   font-size: 18pt;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
 }
 .special-h2{
   margin-top:0;
 }
 h2 {
   font-size: 18pt;
+  font-family: 'Space Grotesk', sans-serif;
 /*   margin-top:0; */
 }
+
+h3 {
+  color: #2d47ba;
+  background-color: F3D6FF;
+  font-size: 12pt;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 300;
+  width: 50%;
+  height: 100%;
+} 
+
+mark {
+  background-color: yellow;
+  color: black;
+}
+
+mark2 {
+  background-color: palegreen;
+  color: black;
+}
+
+mark3 {
+  background-color: skyblue;
+  color: black;
+}
+
 
 button {
   font-family: "Inconsolata", monospace;
@@ -90,7 +118,9 @@ ul {
 li {
   font-size: 12pt;
   list-style-type: none;
+  display: inline-table;
   padding-bottom: 1em;
+  padding-left: 1em;
 }
 
 li.bullet {
@@ -104,8 +134,13 @@ li.bullet a {
 }
 
 li a {
-  color: black;
-  /*   text-decoration: none; */
+  color: #2d47ba;
+     text-decoration: none; 
+}
+
+a {
+  color: #2d47ba;
+     text-decoration: none; 
 }
 
 iframe {

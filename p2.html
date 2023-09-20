@@ -11,15 +11,20 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;600&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
-    <!-- navigation menu -->
-    <div class="nav">
-      <h1>Your Name</h1>
-      <ul>
-        <li>Project <a href="p1.html">#1</a></li>
-        <li>Project <a href="p2.html">#2</a></li>
+       <!-- navigation menu -->
+    <nav>
+      <h1><a href="index.html">Janneane Blevins</a></h1>
+            <ul>
+        <li>Project <a href="p1.html"><mark>#1</mark></a></li>
+        <li>Project <a href="p2.html"><mark>#2</mark></a></li>
         <li>Project <a href="p3.html">#3</a></li>
         <li>Project <a href="p4.html">#4</a></li>
         <li>Project <a href="p5.html">#5</a></li>
@@ -28,13 +33,46 @@
         <li>Project <a href="p8.html">#8</a></li>
         <li>Project <a href="p9.html">#9</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <!-- main content -->
+   <!-- main content -->
     <div class="content">
+      <!-- 1. give your project  a titile -->
+
+      <h1>
+        Project #2: Lost & Found Objects
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe 
+                 allow="camera"
+          style="width: 600px; height: 600px; overflow: hidden;"
+          scrolling="no"
+          frameborder="0"
+          src="https://editor.p5js.org/janneane/full/75u7XSqSy"></iframe>
+
+      </div>
+
+      <!-- 3. write a short description to describe what the work is about -->
+      <h1>
+        Description
+      </h1>
+
       <p>
-        Coming soon
+        Continuing explorations of human and computer languages, I asked someone to describe an object that they lost. Human language and memory can tend towards ambiguity, while computer code requires the interpretation to be more precise.
       </p>
+      <h1>
+         Reflection
+      </h1>
+
+        <p>
+       I really appreciated Roshni’s detailed and objective description. The dimensions were super helpful in the next step of translating to code, and also allowed me to get a sense of scale. I had a pretty clear idea of what to expect, but it was still so satisfying seeing that when I plugged these values in that the result very much matched. The main difference I encountered in these depictions was the sliver band. I decided to place it lower to the bottom rather than 5cm above it. I realized that 5cm is 20% of the total height making it more significant than it sounds.
+ </p>
+
     </div>
   </body>
 </html>
