@@ -2,7 +2,7 @@
 
 body {
   color: #2d47ba;
-  background-color: F3D6FF;
+  background-color: mintcream;
   font-family: 'Space Grotesk', sans-serif;
   margin: 2em;
   width: 100%;
@@ -50,6 +50,11 @@ mark3 {
   color: black;
 }
 
+hr {
+  height: 1px;
+  background-color: #2d47ba;
+  border: none;
+}
 
 button {
   font-family: "Inconsolata", monospace;
