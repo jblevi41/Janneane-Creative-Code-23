@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Your Name | Code 2 Portfolio</title>
+    <title>Janneane Blevins | Creative Coding Portfolio</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,21 +11,20 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;600&display=swap" rel="stylesheet">
-
   </head>
 
   <body>
        <!-- navigation menu -->
-    <nav>
+      <nav>
       <h1><a href="index.html">Janneane Blevins</a></h1>
             <ul>
         <li><a href="p1.html"><mark>#1</mark></a>: Conditional Design</li>
         <li><a href="p2.html"><mark>#2</mark></a>: Lost & Found</li>
-       <!--  <li>Project <a href="p3.html">#3</a></li>
-        <li>Project <a href="p4.html">#4</a></li>
+        <li><a href="p3.html"><mark>#3</mark></a>: Parametric Design</li>
+        <!-- <li>Project <a href="p4.html">#4</a></li>
         <li>Project <a href="p5.html">#5</a></li>
         <li>Project <a href="p6.html">#6</a></li>
         <li>Project <a href="p7.html">#7</a></li>
@@ -34,11 +33,87 @@
       </ul>
     </nav>
 
-    <!-- main content -->
+   <!-- main content -->
     <div class="content">
+      <!-- 1. give your project  a titile -->
+
+      <h1>
+        Project #2: Lost & Found Objects
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe 
+                 allow="camera"
+          style="width: 400px; height: 500px; overflow: hidden;"
+          scrolling="no"
+          frameborder="0"
+          src="https://editor.p5js.org/janneane/full/EsnWJeqqA"></iframe>
+
+      </div>
+
+      <!-- 3. write a short description to describe what the work is about -->
+      <h1>
+        Description
+      </h1>
+
       <p>
-        Coming soon
+        I developed a parametric design in p5.js using the random() function along with mousePressed() and some additional experiments with mouseX, mouseY. Through these functions, I made an abstracted interaction of a honeybee pollinating flowers. Run your finger along the trackpad to fly it, and click to make a flower. 
       </p>
+     
+     <h1>
+        Sketch
+      </h1>
+      <img 
+      src="https://github.com/jblevi41/Janneane-Creative-Code-23/blob/78e9638947ff3fb0363bfd913513a91a40cfdbfa/Janneane-Parametric-shape1.png?raw=true">
+      </img>
+
+      <h1>
+         Process Summary
+      </h1>
+
+        <p>
+       I started with a sketch to make the flowers grow. The overall process ended up being a patchwork of adaptation - grabbing code from others, changing the shape, color, values. And the result was something I think was even cooler! An abstracted honeybee buzzing around making new flowers. 
+       </p>
+
+      <h1>
+        Sketch
+      </h1>
+        <p>
+          I realized that Bézier curves would likely be the best way to get a dynamic more asymmetrical flower shape. But they are so tricky! Earlier I had tried <a href="https://cagrimmett.com/tutorial/2022/03/08/how-to-create-vera-molnars-structure-de-quadrilateres-in-p5-js/"><mark>Chuck Grimmett’s Vera Molnar exercise</mark></a> to generate random quadrilaterals and really liked it. In a bit of an experiment I decided to sub bezier() for quad() and it worked! This became the structure for randomizing the petals. I still want to do some work on size and placement. </p>
+
+          <p>I also tried an alternate version with mouseX, mouseY variables that’s pretty fun!) </p>
+
+        <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+          <iframe 
+                 allow="camera"
+          style="width: 400px; height: 500px; overflow: hidden;"
+          scrolling="no"
+          frameborder="0"
+          src="https://editor.p5js.org/janneane/full/U9K-vsxrx"></iframe>
+
+        </div>
+
+
+          <p>
+            I added some code we looked at in class for <a href="https://editor.p5js.org/mhr1234/sketches/-AA_ViDxF"><mark>randomizing color</mark></a>. I attempted to constrain the RGB values to reds/pinks but need to keep working on this. 
+            
+          </p>
+
+          <p>
+            The bee was an experiment using The Coding Train’s mouseX, mouseY tutorial to make a sort of painting app. 
+          </p>
+
+          <p>
+              Another feature I’d like to keep working on is a clear or reset so the user can start again. 
+          </p>
+ 
+
     </div>
   </body>
 </html>
