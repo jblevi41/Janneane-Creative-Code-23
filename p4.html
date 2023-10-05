@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Your Name | Code 2 Portfolio</title>
+    <title>Janneane Blevins | Creative Coding Portfolio</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,22 +11,21 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;600&display=swap" rel="stylesheet">
-
   </head>
 
   <body>
        <!-- navigation menu -->
-    <nav>
+      <nav>
       <h1><a href="index.html">Janneane Blevins</a></h1>
             <ul>
         <li><a href="p1.html"><mark>#1</mark></a>: Conditional Design</li>
         <li><a href="p2.html"><mark>#2</mark></a>: Lost & Found</li>
-    <!--     <li>Project <a href="p3.html">#3</a></li>
-        <li>Project <a href="p4.html">#4</a></li>
-        <li>Project <a href="p5.html">#5</a></li>
+        <li><a href="p3.html"><mark>#3</mark></a>: Parametric Design</li>
+        <li><a href="p4.html"><mark>#4</mark></a>: Experimental Clock</li>
+     <!--    <li>Project <a href="p5.html">#5</a></li>
         <li>Project <a href="p6.html">#6</a></li>
         <li>Project <a href="p7.html">#7</a></li>
         <li>Project <a href="p8.html">#8</a></li>
@@ -34,11 +33,101 @@
       </ul>
     </nav>
 
-    <!-- main content -->
+   <!-- main content -->
     <div class="content">
+      <!-- 1. give your project  a titile -->
+
+      <h1>
+        Project #4: Experimental Clock
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe 
+                 allow="camera"
+          style="width: 600px; height: 600px; overflow: hidden;"
+          scrolling="no"
+          frameborder="0"
+          src="https://editor.p5js.org/janneane/full/aSpYepGch"></iframe>
+
+      </div>
+
+      <!-- 3. write a short description to describe what the work is about -->
+      <h1>
+        Description
+      </h1>
+
       <p>
-        Coming soon
+        My clock uses an animated spiral of ellipses to compare how a child experiences time to how an adult experiences time. As a mother to a toddler, it's really wonderful to see how we gain our understanding of time. I came across a <a href="https://www.psychologytoday.com/us/blog/think-well/202011/why-time-goes-faster-we-age"><mark2>study</mark2></a> that explained why one minute feels like forever when you're young, but flys by as you age. Using a frame rate analogy, younger brains are capturing more frames per minute or second, and adult brains are capturing fewer. So in a sense, a child is experiencing more time per minute, and an adult less. A child is often processing experiences or even everyday phenomona for the first time -- they're building and encoding rich context memories. As adults, we already have a bank of memories stored, so we're able to use more lossy ways of experiencing time, calling forth experiences and learned context. 
       </p>
+     
+      <h1>
+         Process Summary
+      </h1>
+
+        <p>
+      Using a basic spiral function in p5.js, I generated a formula to alter the animation based on age input. Someone younger than 18, will reveal a denser animation reflecting the higher frame rate. Someone older than 18 will generate a faster more sparse dot pattern. 
+       </p>
+
+      <h1>
+        Process Detail
+      </h1>
+      <p> I began with a series of pseudocode prompts and sketches to understand how I might visualize or code time. Drawing spirals, circles, lines, and waves lent visual metaphors for makring time.
+      </p>
+       <p> I selected  the spiral pattern because I felt it readily references the clock. Time passing, repeating, expanding. There's a lot to explore still regarding the speed, frame rate. It would be interesting to build in a steady gradation of how time is experienced by year. I'd also like to build in a reset funtion after one minute, and/or run the animations side by side. 
+       </p>
+       
+        <p>
+      
+        1. 
+        <br>If (you are an adult) {
+        <br>  time goes faster
+        <br>} 
+        <br> else if (you are a child) {
+        <br>   time goes slower
+        <br>} 
+        <br> else {
+        <br>   time is uniform
+        <br>}
+          <img src="https://github.com/jblevi41/Janneane-Creative-Code-23/blob/main/images/Janneane-Clock-sketches-01.png?raw=true">
+      </p>
+
+        <p>
+      
+        2. 
+        <br>If (you are a child) {
+        <br>  you perceive more frames-per-second
+        <br>} 
+        <br> else if (you are an adult) {
+        <br>   you perceive fewer frames-per-second
+          <img src="https://github.com/jblevi41/Janneane-Creative-Code-23/blob/main/images/Janneane-Clock-sketches-03.png?raw=true">
+      </p>
+      
+       <p>
+        3.
+        <br>If (you are human) {
+        <br>  time goes faster
+        <br>} 
+        <br> else if (you are a plant) {
+        <br>   you perceive time as a wave
+        <br>} 
+        <br> else {
+        <br>  you perceive time as a circle
+        <br>}
+        <img src="https://github.com/jblevi41/Janneane-Creative-Code-23/blob/main/images/Janneane-Clock-sketches-02.png?raw=true">
+      </p>
+
+        <h1>
+          Reflection
+      </h1>
+       
+           <p> To continue the exercise, I'd love to try an alternate clock that compares the experience of time by humans to plants. I once read that plants experinence time as a wave. I experimented briefly with <a href="https://p5js.org/examples/math-sine-wave.html"><mark2>Daniel Shiffman's sine wave code</mark2></a>; really fantasitc things happen when you change the amplitude and period values. </p>
+
+         
+
     </div>
   </body>
 </html>
