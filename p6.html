@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Your Name | Code 2 Portfolio</title>
+    <title>Janneane Blevins | Creative Coding Portfolio< | Window</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,25 +20,85 @@
   <body>
        <!-- navigation menu -->
     <nav>
-      <h1><a href="index.html">Janneane Blevins</a></h1>
+    <h1><a href="index.html">Janneane Blevins</a></h1>
             <ul>
         <li><a href="p1.html"><mark>#1</mark></a>: Conditional Design</li>
         <li><a href="p2.html"><mark>#2</mark></a>: Lost & Found</li>
-       <!--  <li>Project <a href="p3.html">#3</a></li>
-        <li>Project <a href="p4.html">#4</a></li>
-        <li>Project <a href="p5.html">#5</a></li>
-        <li>Project <a href="p6.html">#6</a></li>
-        <li>Project <a href="p7.html">#7</a></li>
+        <li><a href="p3.html"><mark>#3</mark></a>: Parametric Design</li>
+        <li><a href="p4.html"><mark>#4</mark></a>: Experimental Clock</li>
+        <li><a href="p5.html"><mark>#5</mark></a>: Optical Field</li>
+        <li><a href="p6.html"><mark>#6</mark></a>: Looking out the Window</li>
+<!--         <li>Project <a href="p7.html">#7</a></li>
         <li>Project <a href="p8.html">#8</a></li>
-        <li>Project <a href="p9.html">#9</a></li> -->
+        <li>Project <a href="p9.html">#9</a></li> --> 
       </ul>
     </nav>
 
     <!-- main content -->
     <div class="content">
+<h1>
+        Project #6: Looking out the Window
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe 
+                 allow="camera"
+          style="width: 1000px; height: 600px; overflow: hidden;"
+          scrolling="no"
+          frameborder="0"
+          src="https://editor.p5js.org/janneane/full/Q06DEvd_u"></iframe>
+
+      </div>
+
+      <!-- 3. write a short description to describe what the work is about -->
+      <h1>
+        Description
+      </h1>
+
       <p>
-        Coming soon
+        The scaffolding on my apartment building just came down, and I’ve been so happy to be able to look out the window again. For one week, I tracked each time I looked out the window and what I saw. I created a visualization of this data in p5.js using arrays, conditionals, and loops.
       </p>
+     
+      <h1>
+         Process
+      </h1>
+      <BR CLEAR="all">
+              <img src="https://github.com/jblevi41/Janneane-Creative-Code-23/blob/main/images/8-window-IMG_6445.jpeg?raw=true" >
+             <br>
+             <br>
+          <img src="https://github.com/jblevi41/Janneane-Creative-Code-23/blob/main/images/8-window-IMG_6360.jpeg?raw=true" >
+        <BR CLEAR="all">
+        <p>
+        I logged each viewing in a notebook kept near the window, jotting down the date, time, and a short description. Once I had gathered a few days of data, I started thinking about how it would be visualized. How would it be categorized; how would each unit be represented; do the x and y axies carry particularly meaning. The <a href="http://www.dear-data.com/all"><mark2>Dear Data project</mark2></a> was immensely helpful in thinking through how to make the data tangible. 
+        </p>
+        <BR CLEAR="all">
+          <img src="https://github.com/jblevi41/Janneane-Creative-Code-23/blob/main/images/8-window-IMG_6446.jpeg?raw=true" >
+         <BR CLEAR="all">
+         <p>
+         The data visualization was made in p5.js using arrays, conditionals, and loops. The color of sky or atmospheric conditions was a recurrent note, and so for my background a I created a gradient sky. Layered on top of these are window-ish boxes, representing each entry. 
+         </p>
+         <BR CLEAR="all">
+          <img src="https://github.com/jblevi41/Janneane-Creative-Code-23/blob/main/images/8-window-process.png?raw=true" >
+          <BR CLEAR="all">
+        <p>
+         I ran into some hiccups translating my sketches to code. When I tried to access my text based array, I could only get the word to appear on screen, and I wanted an abstracted object representation. When I tired to do this, it would make a square for each character in the word. Allison Parrish’s <a href="https://creative-coding.decontextualize.com/text-and-type/"><mark2>Text and type tutorial </mark2></a> was immensely helpful in getting me closer to my initial sketch. 
+         </p>
+
+        <h1>
+          Reflection
+       </h1>
+       
+        <p>
+          As I became more conscious of the behavior, I found myself looking for new things, rather than the same thing already recorded. I appreciated that the exercised deepened my looking. 
+        </p>
+
+        <p>
+        Continuing the project, I’d like the width of the boxes to be more meaningful. Right now they’re bound to the word length, but taking on a time element would be more meaningful, e.g. How long did I look out the window? What time of day? I’d also like to figure out how to categorize and filter the arrays, and assign colors, so that an additional story of the types of things noticed is more evident.  
+        </p>
     </div>
   </body>
 </html>
